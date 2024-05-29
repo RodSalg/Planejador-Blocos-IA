@@ -31,13 +31,6 @@ object(X) :- block(X) ; pyramid(X) ; ball(X) ; closed_box_cube(X) ; place(X) ; r
 %                                         Inicial State 
 %--------------------------------------------------------------------------------------------------
 
-% Representação de um estado inicial no mundo dos blocos
-%
-%       c          
-%       a   b  
-%       = = = = = =
-% place 1 2 3 4 5 6
-
 
 initial_state([clear(2), clear(4), clear(b), clear(c), on(a,1), on(b,3), on(c,a)]).
 

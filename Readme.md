@@ -18,7 +18,8 @@ O planejador utiliza um algoritmo de planejamento com regressão de metas para g
 
 6. **Impressão do Plano de Ação:** Utiliza a função `print_result/1` para imprimir o plano de ação.
 
-# Chamada da Função de Resolução no SWI Prolog PARTE 1
+# Chamada da Função de Resolução (Bloco_1.pl) no SWI Prolog PARTE 1
+O objetivo principal do projeto é implementar um planejador capaz de receber um estado inicial de empilhamento de blocos e uma lista de metas desejadas, e então gerar um plano de ação que transforme o estado inicial no estado desejado, respeitando as restrições de movimento dos blocos.
 Para testar o código, siga os seguintes passos
 1. Carregar o Código Prolog: Carregue o código Prolog em um ambiente Prolog, como SWI-Prolog.
 2. Chamar a Função de Resolução: Chame a função solve(Plan) para obter o plano de ação.
@@ -26,14 +27,16 @@ Para testar o código, siga os seguintes passos
 3. Imprimir o Plano de Ação: Após chamar a função solve(Plan), imprima o plano de ação com “print_result/1”.
 ?- print_result(Plan).
 
-# Chamada da Função de Resolução no SWI Prolog PARTE 2:
+# Chamada da Função de Planejador (Planejador.pl) no SWI Prolog PARTE 2:
+Esta seção tem como objetivo desenvolver um planejador para empilhar blocos de diferentes dimensões utilizando Prolog. O planejador usa uma abordagem de meio-fim com regressão de metas para encontrar uma sequência de ações que satisfaça os objetivos especificados.
 Para testar e verificar o código no SWI Prolog, siga os seguintes passos:
 1. Para verificar o funcionamento correto do planejador, realize o seguinte teste chamando a função abaixo.
 ?- plan([clear(a), clear(b), clear(c), clear(d), on(a, table), on(b, table), on(c, table), on(d, table)],
         [on(a, b), on(b, c), on(c, table)],
         Plan).
         
-# Chamada da Função de Resolução no SWI Prolog PARTE 3:
+# Chamada da Função de Empilhamento Seguro (Seguro_Empilhar) no SWI Prolog PARTE 3:
+Através dos testes no SWI Prolog, podemos verificar a correção das ações e a consistência das regras definidas.
 Para testar e verificar o código no SWI Prolog, siga os seguintes passos:
 1. Carregar o Código Prolog: Carregue o código Prolog em um ambiente Prolog, como SWI-Prolog.
 2. Testando Predicados: Verifique se um bloco pode ser movido:

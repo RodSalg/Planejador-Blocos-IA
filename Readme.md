@@ -18,6 +18,26 @@ O planejador utiliza um algoritmo de planejamento com regressão de metas para g
 
 6. **Impressão do Plano de Ação:** Utiliza a função `print_result/1` para imprimir o plano de ação.
 
-# Chamada da Função de Resolução no SWI Prolog:
+# Chamada da Função de Resolução no SWI Prolog PARTE 1
+Para testar o código, siga os seguintes passos
+1. Carregar o Código Prolog: Carregue o código Prolog em um ambiente Prolog, como SWI-Prolog.
+2. Chamar a Função de Resolução: Chame a função solve(Plan) para obter o plano de ação.
+?- solve(Plan).
+3. Imprimir o Plano de Ação: Após chamar a função solve(Plan), imprima o plano de ação com “print_result/1”.
+?- print_result(Plan).
 
-solve(Plan), print_result(Plan).
+# Chamada da Função de Resolução no SWI Prolog PARTE 2:
+Para testar e verificar o código no SWI Prolog, siga os seguintes passos:
+1. Para verificar o funcionamento correto do planejador, realize o seguinte teste chamando a função abaixo.
+?- plan([clear(a), clear(b), clear(c), clear(d), on(a, table), on(b, table), on(c, table), on(d, table)],
+        [on(a, b), on(b, c), on(c, table)],
+        Plan).
+        
+# Chamada da Função de Resolução no SWI Prolog PARTE 3:
+Para testar e verificar o código no SWI Prolog, siga os seguintes passos:
+1. Carregar o Código Prolog: Carregue o código Prolog em um ambiente Prolog, como SWI-Prolog.
+2. Testando Predicados: Verifique se um bloco pode ser movido:
+?- can(move(a,1,2), Actions).
+3. Verificando o Estado Inicial: Confira o estado inicial:
+?- initial_state(State).
+
